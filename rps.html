@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock Paper Scissors Game</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+  <h1 class="game-title">🎮 Rock, Paper, Scissors 🎮</h1>
+
+
+  <div class="round-info">
+    <label for="rounds">Choose rounds (min 5): </label>
+    <input type="number" id="rounds" min="5" value="5">
+    <button class="start-btn" onclick="startGame()">Start Game</button>
+  </div>
+
+ 
+  <div class="choices" id="choices">
+    <div class="choice" onclick="playGame('rock')">
+      <img src="src/rock.png" alt="Rock" class="game-img">
+    </div>
+    <div class="choice" onclick="playGame('paper')">
+      <img src="src/ppr.png" alt="Paper" class="game-img">
+    </div>
+    <div class="choice" onclick="playGame('scissors')">
+      <img src="src/si.png" alt="Scissors" class="game-img">
+    </div>
+  </div>
+
+
+  <div class="result" id="result"></div>
+
+
+  <div class="scoreboard">
+    <p>Player Score: <span id="player-score">0</span></p>
+    <p>Computer Score: <span id="computer-score">0</span></p>
+    <p>Rounds Played: <span id="rounds-played">0</span>/<span id="total-rounds">5</span></p>
+  </div>
+
+  <button class="reset-btn" onclick="resetGame()">Reset Game</button>
+
+ 
+
+ <footer>
+    <h3>How This Game Was Developed:</h3>
+    <p>
+      This Rock, Paper, Scissors game was developed using HTML, CSS, and JavaScript. 
+      The game logic is simple: it randomly selects a choice for the computer and compares it to the user's choice, determining a winner for each round.
+      The website includes a scoreboard and is responsive for mobile and desktop devices.
+    </p>
+    <p>
+      I received help from some tools to enhance the design and functionality, including making the game more mobile-friendly and adding some cool animations.
+    </p>
+  </footer>
+
+  <script src="src/script.js"></script>
+</body>
+</html>

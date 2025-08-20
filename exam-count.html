@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A/L Exam Countdown</title>
+    <link rel="stylesheet" href="/src/a-styles.css">
+</head>
+<body>
+    <div class="background"></div> 
+    <div class="container">
+        <h1>A/L Exam Countdown</h1>
+
+        <div class="exam-info">
+            
+            <div id="subjects-container">
+                
+            </div>
+        </div>
+
+        <div class="countdown-glass">
+            <div class="countdown" id="countdown-container">
+                <div class="flip-box">
+                    <div class="flip-box-inner" id="days-box">
+                        <div class="flip-box-front" id="days">00</div>
+                        <div class="flip-box-back">00</div>
+                    </div>
+                    <p>Days</p>
+                </div>
+                <div class="flip-box">
+                    <div class="flip-box-inner" id="hours-box">
+                        <div class="flip-box-front" id="hours">00</div>
+                        <div class="flip-box-back">00</div>
+                    </div>
+                    <p>Hours</p>
+                </div>
+                <div class="flip-box">
+                    <div class="flip-box-inner" id="minutes-box">
+                        <div class="flip-box-front" id="minutes">00</div>
+                        <div class="flip-box-back">00</div>
+                    </div>
+                    <p>Minutes</p>
+                </div>
+                <div class="flip-box">
+                    <div class="flip-box-inner" id="seconds-box">
+                        <div class="flip-box-front" id="seconds">00</div>
+                        <div class="flip-box-back">00</div>
+                    </div>
+                    <p>Seconds</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="motivation">
+            
+        </div>
+
+        <button id="download-timetable-btn">Download Time Table</button>
+        
+        <div id="future-exams" class="hidden">
+            <h2>Upcoming Subjects</h2>
+            <ul id="future-exams-list"></ul>
+        </div>
+    </div>
+
+    <script src="/src/a-script.js"></script>
+</body>
+</html>
